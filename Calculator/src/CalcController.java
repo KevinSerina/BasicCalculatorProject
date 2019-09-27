@@ -5,7 +5,7 @@ import javafx.scene.control.TextField;
 
 public class CalcController {
 	
-	double num = 0;
+	int num = 0;
 	int operation = -1;
 
     @FXML
@@ -121,7 +121,7 @@ public class CalcController {
     		switch(operation)
     		{
     		case 1: //Addition
-    			double answer = num + secondOperand;
+    			int answer = num + secondOperand;
     			txtField.setText(String.valueOf(answer));break;
     		case 2: //Division
     			answer = num / secondOperand;
